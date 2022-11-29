@@ -1,0 +1,1 @@
+local char = game.Players.LocalPlayer.Characterfor i,v in next, char:children() do if v.Name == "Names" then v.Parent = game.CorePackages endendchar.ChildAdded:Connect(function(d) wait() if d.Name == "Names" then d.Parent = game.CorePackages endend)for i = 1, 10000 do game.ReplicatedStorage.RemoteEventFolder.RankPlayerOnRespawn:FireServer()end
